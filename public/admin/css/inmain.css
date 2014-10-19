@@ -1,0 +1,86 @@
+*{
+
+}
+
+body{
+  background: linear-gradient(rgba(196, 102, 0, 0.2), rgba(155, 89, 182, 0.2)),url('../img/gs.png');
+}
+
+
+/* general */
+
+td input[type=button]{    
+width: 100px;
+background: #27AE60;
+font-weight: bold;
+color: white;
+border: 0 none;
+border-radius: 1px;
+cursor: pointer;
+padding: 10px 5px;
+margin: 10px 5px;
+margin-top: 25px;
+}
+
+#first_form{
+  position: absolute;
+  background-color:white; 
+  right: 35%;
+  border: 1px solid black;
+  border-radius: 8px;
+  -webkit-border-radius:8px;
+  -moz-border-radius:8px;
+  -o-border-radius:8px;
+  padding: 20px;  
+  text-align: center;
+  font-size: 23px;
+  top: 23%;
+  padding-bottom: 0px;
+}
+
+
+#first_form td{
+  font-size: 18px;
+  padding-left: 25px;  
+}
+
+#first_form input{
+  font-size: 18px; 
+}
+
+
+#first_form td input[type=reset]{
+    width: 100px;
+background: #27AE60;
+font-weight: bold;
+color: white;
+border: 0 none;
+border-radius: 1px;
+cursor: pointer;
+padding: 10px 5px;
+margin: 10px 5px;
+margin-top: 25px;
+}
+
+#first_form td input[type=file]{
+  font-size: 15px;
+}
+
+#first_form #ph_instruct{
+  text-align: center;
+  font-size: 15px;
+}
+
+#first_form td select{
+  font-size: 15px; 
+}
+
+
+/* first section*/
+
+#first_entry{
+  display: block;
+}
+
+
+
