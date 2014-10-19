@@ -59,7 +59,7 @@ var url = (function(a) {
 		  			xmlhttp1=new ActiveXObject("Microsoft.XMLHTTP");
 		 		 }
 
-				xmlhttp1.open("GET","commentadd.php?comment="+mk+"&no="+url["uv"],false);
+				xmlhttp1.open("GET","public/php/commentadd.php?comment="+mk+"&no="+url["uv"],false);
 
 				//xmlhttp1.send();
 				xmlhttp1.onreadystatechange =function()
