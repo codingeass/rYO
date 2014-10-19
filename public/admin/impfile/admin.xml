@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE admin [
+<!ELEMENT admin (titleofblog)>
+<!ELEMENT user (titleofblog)>
+<!ELEMENT username (#PCDATA)>
+<!ELEMENT password (#PCDATA)>
+]>
+
+<admin>
+	<user>		
+		<username>Amandeep</username>
+		<password>kirito</password>
+	</user>
+</admin>
