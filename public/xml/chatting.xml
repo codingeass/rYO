@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE chatting [
+<!ELEMENT Complete (BlogSection , title , author , content , comments , comment)>
+<!ELEMENT BlogSection (title , author , content , comments , comment)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT content (#PCDATA)>
+<!ELEMENT comments (comment)>
+<!ELEMENT comment (#PCDATA)>
+]>
+<Complete>
+<BlogSection>
+<title>
+Stringology is Magic
+</title>
+<author>
+Codechef
+</author>
+<content>
+	You have been given a string T with n lowercase letters T[1..n]. For each substrings T[l..r], we can assign them two values, k1 and k2, which are defined as following.
+k1 is the number of different substrings which are lexicographically smaller than T[l..r]. There are (n + 1) * n / 2 substrings in total.
+k2 indicates the number of substrings which are as same as T[l..r] but have smaller left subscript than l.
+In this problem, you need to answer the following two queries:
+Select k1 k2: report l and r, such that T[l..r] are assigned values k1 and k2.
+Rank l r: output the assigned k1 and k2 of T[l..r].
+</content>	
+<comments>
+	<comment>Nice</comment>
+	<comment>Hello</comment>
+<comment>amandeep</comment><comment>laxmikant</comment><comment>vishal</comment><comment>parbhat</comment><comment>tryu</comment></comments>
+</BlogSection>
+<BlogSection>
+<title>
+I don't know
+</title>
+<author>
+Codechef
+</author>
+<content>
+	You have been given a string T with n lowercase letters T[1..n]. For each substrings T[l..r], we can assign them two values, k1 and k2, which are defined as following.
+k1 is the number of different substrings which are lexicographically smaller than T[l..r]. There are (n + 1) * n / 2 substrings in total.
+k2 indicates the number of substrings which are as same as T[l..r] but have smaller left subscript than l.
+In this problem, you need to answer the following two queries:
+Select k1 k2: report l and r, such that T[l..r] are assigned values k1 and k2.
+Rank l r: output the assigned k1 and k2 of T[l..r].
+</content>	
+<comments>
+	<comment>Nice</comment>
+	<comment>Hello</comment>
+<comment>unknown</comment><comment>laxmikant</comment><comment>hellsing</comment></comments>
+</BlogSection>
+</Complete>
