@@ -8,7 +8,11 @@
 
 <admin>
 	<user>		
-		<username>Amandeep</username>
-		<password>kirito</password>
+		<username>amandeep</username>
+		<password>ash</password>
+	</user>
+	<user>		
+		<username>aditya</username>
+		<password>gotan</password>
 	</user>
 </admin>
