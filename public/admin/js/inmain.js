@@ -39,8 +39,7 @@ function addcontent(){
 					{
 						if(xmlhttp.responseText=="Correct")
 						{
-							alert("Added Successfully");
-							//window.location.assign('admin.php');
+							alert("Added Successfully");							//window.location.assign('admin.php');
 						}
 						else
 							alert("Error occured");

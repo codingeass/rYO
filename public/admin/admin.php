@@ -28,5 +28,6 @@ require("php/sessionv.php");
 Select Post from given below :
 </section>
 
+<script type="text/javascript" src="js/contentin.js"></script>
 </body>
 </html>
