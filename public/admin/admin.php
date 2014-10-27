@@ -3,12 +3,11 @@
 <link rel="stylesheet" type="text/css" href="css/inmain.css">
 <script type="text/javascript" src="js/inmain.js"></script>
 </head>
-<body>
+<body >
 
 <!--document.title = "Hello World";-->
 
 <?php
-
 require("php/sessionv.php");
 ?>
 
@@ -28,6 +27,15 @@ require("php/sessionv.php");
 Select Post from given below :
 </section>
 
+<section id="edit_content">
+	<center>Post : <input type="text" size="60" name="title">&nbsp;&nbsp;&nbsp;<button onclick="upcontent()">Update</button>&nbsp;&nbsp;<button onclick="addback()">Close</button><center>
+	<br/><br/>
+	<textarea rows="50" cols="100" name="content">
+	</textarea>
+	<section id="edit_comment"></section>
+</section>
+
 <script type="text/javascript" src="js/contentin.js"></script>
+<script type="text/javascript">document.onload=display_edit(0);</script>
 </body>
 </html>

@@ -103,6 +103,19 @@ margin-top: 25px;
 #first #s2{
   cursor: pointer;
 }
+#edit_content{
+  text-align: center;
+  font-family:  Georgia, "Times New Roman",Serif;
+  font-size: 23px;
+  display: block;
+  margin-top:50px ; 
+  margin-bottom:20px;
+}
+
+#edit_content input{
+  font-family:  Georgia, "Times New Roman",Serif;
+  font-size: 23px;
+}
 
 
 
