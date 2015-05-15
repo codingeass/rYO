@@ -9,24 +9,39 @@
 		<link rel="stylesheet" type="text/css" href="public/css/style.css">
 	</head>
 	<body>
-		<div class="blog">
+		<div class="blog row">
 			
-			<div id="profile_description">
-
+		<div class="col-md-3" id="profile_description">
+			<div  class="text-center">
+			<img src="public/img/profile.png" id="profile_pic"/>
+			<div id="aboutme_short">AMANDEEP GUPTA<br/><section style="font-size:15px;">Web Developer | Programmer<section> 
+			</div>
+			
+			<!--<a href="https://twitter.com/codingeass" class="twitter-follow-button" data-show-count="false">Follow @codingeass</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>-->
+			
+			<div id="social_link">
+				<a href="mailto:amandeepgupta@rocketmail.com" target="_blank"><img src="public/img/mail.png" style="top:325px;"></a>
+				<!--<a href="https://www.facebook.com/amandeeptheviper" target="_blank"><img src="dist/img/facebook.png"></a>-->
+				<a href="https://github.com/codingeass" target="_blank"><img src="public/img/github.png" style="top:325px;"></a>
+				<a href="https://in.linkedin.com/in/codingeass" target="_blank"><img src="public/img/linkedin1.png"></a>
+				<a href="https://twitter.com/codingeass" target="_blank"><img src="public/img/twitter.png"></a>
+				<!--<a href="https://theviperbites.blogspot.in" target="_blank"><img src="dist/img/rss.png"></a>-->
+			</div>
 			</div>
 
-			<div id="inner_text">											
-			
-			</div>
 		</div>
 
+		<div id="inner_text"  class="col-md-9">											
 		
+		</div>
+
+		</div>
 
 		<br/>
 		<br/>
 
 		  <div id="disqus_thread"></div>
-			<!-- Disqus -->
+			<!-- Disqus 
 			<script type="text/javascript">
 			    /* * * CONFIGURATION VARIABLES * * */
 			    var disqus_shortname = 'blogxml';

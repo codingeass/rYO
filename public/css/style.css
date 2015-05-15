@@ -23,6 +23,11 @@ body {
 	font-size: 19px;
 }
 
+#inner_text {
+	overflow: hidden;
+	padding: 50px;
+}
+
 #inner_text > #b_author{
 	float:right;
 	font-size:20px;
@@ -30,4 +35,38 @@ body {
 
 #inner_text > #b_content{
 	font-size: 19px;
+}
+
+#profile_description {
+	padding-top: 100px;
+	border-right: 1px solid black;
+	height: 91vh;
+}
+
+#profile_description  #profile_pic {
+	width:58%;
+	-webkit-border-radius:100%;
+	border: 3px solid #a8a6a8;
+	border-radius: 50%;
+   -webkit-radial-gradient(white,grey);
+  -webkit-radial-gradient: red,white;
+  color:rgba(255,255,255,0.7);
+  -webkit-transition:-webkit-border-radius 1s,opacity 1s,border 1s,padding 1s;
+  -moz-border-radius:100%;
+   -moz-radial-gradient(white,grey);
+  -moz-radial-gradient: red,white;
+  -moz-transition:-moz-border-radius 1s,opacity 1s,border 1s,padding 1s;
+}
+
+#profile_description #aboutme_short{
+	margin-top:0.3em;
+	margin-left: auto;
+	margin-right: auto;
+	border-bottom: 1px solid white; 
+}
+
+#profile_description #social_link img{
+	width:50px;
+	padding-top: 1em;
+	padding-bottom: 1em;
 }
