@@ -1,5 +1,5 @@
 <?php
-$xml=simplexml_load_file("..\/xml\/chatting.xml");
+$xml=simplexml_load_file("..\/xml\/blog.xml");
 
 if(isset($_REQUEST["comment"])&&isset($_REQUEST["no"]))
 {

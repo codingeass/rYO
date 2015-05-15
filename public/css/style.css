@@ -1,0 +1,24 @@
+@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400italic,700,700italic|Share+Tech+Mono|Oxygen+Mono);
+body { 
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+#blog_post_small{
+	border:1px solid black;
+	border-radius:3px;
+	padding:15px;
+	margin:50px;
+	overflow: hidden;
+}
+#blog_post_small > #s_author{
+	position: relative;
+	float:right;
+	font-size:20px;
+}
+#blog_post_small > #s_content{
+	font-size: 19px;
+}
