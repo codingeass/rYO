@@ -12,7 +12,7 @@ body {
 	border-radius:3px;
 	padding:15px;
 	margin:50px;
-	overflow: hidden;
+	overflow: hidden;/*to stop for oveflowing ... note height not given here*/
 }
 #blog_post_small > #s_author{
 	position: relative;
@@ -20,5 +20,14 @@ body {
 	font-size:20px;
 }
 #blog_post_small > #s_content{
+	font-size: 19px;
+}
+
+#inner_text > #b_author{
+	float:right;
+	font-size:20px;
+}
+
+#inner_text > #b_content{
 	font-size: 19px;
 }

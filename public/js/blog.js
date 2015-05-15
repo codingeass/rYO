@@ -30,11 +30,14 @@ var url = (function(a) {
 		var mg=document.getElementById("inner_text");
 
 		var x=xmlDoc.getElementsByTagName("BlogSection");
-		var mk="<center><h1>"+x[url["uv"]].getElementsByTagName("title")[0].childNodes[0].nodeValue+"</h1></center>";
-		mk=mk+"<div style='float:right;font-size:20px;'>Author:"+x[url["uv"]].getElementsByTagName("author")[0].childNodes[0].nodeValue+"</div>"
-		mk=mk+"<div style='font-size:19px'>"+x[url["uv"]].getElementsByTagName("content")[0].childNodes[0].nodeValue+"</div>";
-		mk=mk+"<br/><br/><div style='font-size:19px'>Comment</div>"
+
+		var mk="<center><h1 id='b_title'>"+x[url["uv"]].getElementsByTagName("title")[0].childNodes[0].nodeValue+"</h1></center>";
+		mk=mk+"<div id='b_author'>Author:"+x[url["uv"]].getElementsByTagName("author")[0].childNodes[0].nodeValue+"</div>"
+		mk=mk+"<div id='b_content'>"+x[url["uv"]].getElementsByTagName("content")[0].childNodes[0].nodeValue+"</div>";
+		
 		mg.innerHTML=mk;
+		
+		/*
 		mk="";
 		mg=document.getElementById("comment_section");
 		var s=x[url["uv"]].getElementsByTagName("comment");
@@ -43,6 +46,8 @@ var url = (function(a) {
 		  		mk=mk+"<li style='list-style:none'>"+x[url["uv"]].getElementsByTagName("comment")[i].childNodes[0].nodeValue+"</li>"
 		  }
 		mg.innerHTML=mk;
+
+		
 		function addcomment()
 		{
 			var mk=document.getElementById("comment_add").value;
@@ -74,3 +79,4 @@ var url = (function(a) {
 		      mg.innerHTML=mg.innerHTML+"<li style='list-style:none'>"+mk+"</li>";
 			}
 		}
+		*/
