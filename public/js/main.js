@@ -18,7 +18,7 @@ var mk="";
 
 for (i=0;i<x.length;i++)
 {
-	mk=mk+"<section id='blog_post_small'><h2><a href='blog.html?uv="+i+"'>"+x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue+"</a></h2>";
+	mk=mk+"<section id='blog_post_small'><h2><span class='glyphicon glyphicon-link'></span><a href='blog.html?uv="+i+"'>"+x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue+"</a></h2>";
 	mk=mk+"<div id='s_content'>"+x[i].getElementsByTagName("content")[0].childNodes[0].nodeValue.substring(0,300)+"</div>";
 	mk=mk+"<div id='s_author'>Author:"+x[i].getElementsByTagName("author")[0].childNodes[0].nodeValue+"</div></section>"
 }
