@@ -43,7 +43,8 @@ body {
 #profile_description {
 	padding-top: 100px;
 	border-right: 1px solid grey;
-	height: 105%;
+	height: 107%;
+	background-color: rgb(232, 223, 147);
 }
 
 #profile_description  #profile_pic {
@@ -67,9 +68,26 @@ body {
 	margin-right: auto;
 	border-bottom: 1px solid grey; 
 }
+#profile_description #social_link{
+	text-align: center;
+}
 
 #profile_description #social_link img{
 	width:50px;
 	padding-top: 1em;
 	padding-bottom: 1em;
+}
+
+#navigation_section{
+	font-size: 20px;
+	text-align: center;
+	/*border-top: 1px solid rgb(182, 182, 182);*/
+}
+#navigation_section a:hover{
+	text-decoration: none;
+}
+
+#navigation_section #nav_node{
+	cursor: pointer;
+	display: block;
 }
