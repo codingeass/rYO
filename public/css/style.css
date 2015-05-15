@@ -4,8 +4,8 @@ body {
 }
 
 .blog{
-	height: 96vh;
-
+	height: 91vh;
+	margin-bottom: 0px;
 	padding-bottom: 0px;
 }
 
@@ -27,6 +27,8 @@ body {
 
 #secondary_section {
 	padding: 50px;
+	height: 105%;
+	overflow-y: scroll;
 }
 
 #inner_text > #b_author{
@@ -41,7 +43,7 @@ body {
 #profile_description {
 	padding-top: 100px;
 	border-right: 1px solid grey;
-	height: 100%;
+	height: 105%;
 }
 
 #profile_description  #profile_pic {
@@ -63,7 +65,7 @@ body {
 	margin-top:0.3em;
 	margin-left: auto;
 	margin-right: auto;
-	border-bottom: 1px solid white; 
+	border-bottom: 1px solid grey; 
 }
 
 #profile_description #social_link img{
