@@ -2,9 +2,11 @@
 body { 
   font-family: 'Quattrocento Sans', sans-serif;
 }
-*{
-	padding: 0px;
-	margin: 0px;
+
+.blog{
+	height: 96vh;
+
+	padding-bottom: 0px;
 }
 
 #blog_post_small{
@@ -23,8 +25,7 @@ body {
 	font-size: 19px;
 }
 
-#inner_text {
-	overflow: hidden;
+#secondary_section {
 	padding: 50px;
 }
 
@@ -39,8 +40,8 @@ body {
 
 #profile_description {
 	padding-top: 100px;
-	border-right: 1px solid black;
-	height: 91vh;
+	border-right: 1px solid grey;
+	height: 100%;
 }
 
 #profile_description  #profile_pic {
