@@ -4,25 +4,30 @@ body {
 }
 
 .blog{
-	height: 91vh;
+	height: 93vh;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
+	width: 101.12%;
 }
 
 #blog_post_small{
 	border:1px solid black;
 	border-radius:3px;
 	padding:15px;
-	margin:50px;
+	margin:20px;
 	overflow: hidden;/*to stop for oveflowing ... note height not given here*/
 }
+#blog_post_small > h2{
+	font-size: 20px;
+}
+
 #blog_post_small > #s_author{
 	position: relative;
 	float:right;
-	font-size:20px;
+	font-size:18px;
 }
 #blog_post_small > #s_content{
-	font-size: 19px;
+	font-size: 18px;
 }
 
 #secondary_section {
@@ -90,4 +95,17 @@ body {
 #navigation_section #nav_node{
 	cursor: pointer;
 	display: block;
+}
+
+@media only screen and (max-width:750px) {
+	#secondary_section,#profile_description{
+		height: auto;
+	}
+	#blog_post_small {
+		margin: 10px 5px 0px 5px ;
+		padding: 8px;
+	}
+	#secondary_section{
+		padding: 20px;
+	}
 }
