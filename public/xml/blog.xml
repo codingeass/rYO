@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE chatting [
-<!ELEMENT Complete (BlogSection , title , author , content , comments , comment)>
-<!ELEMENT BlogSection (title , author , content , comments , comment)>
+<!ELEMENT Complete (BlogSection , title , author , content )>
+<!ELEMENT BlogSection (title , author , content)>
 <!ELEMENT title (#PCDATA)>
 <!ELEMENT author (#PCDATA)>
 <!ELEMENT content (#PCDATA)>
-<!ELEMENT comments (comment)>
-<!ELEMENT comment (#PCDATA)>
 ]>
 <Complete>
 <BlogSection>
@@ -24,10 +22,7 @@ In this problem, you need to answer the following two queries:
 Select k1 k2: report l and r, such that T[l..r] are assigned values k1 and k2.
 Rank l r: output the assigned k1 and k2 of T[l..r].
 </content>	
-<comments>
-	<comment>Nice</comment>
-	<comment>Hello</comment>
-<comment>amandeep</comment><comment>laxmikant</comment><comment>vishal</comment><comment>parbhat</comment><comment>tryu</comment></comments>
+
 </BlogSection>
 <BlogSection>
 <title>
@@ -44,9 +39,5 @@ In this problem, you need to answer the following two queries:
 Select k1 k2: report l and r, such that T[l..r] are assigned values k1 and k2.
 Rank l r: output the assigned k1 and k2 of T[l..r].
 </content>	
-<comments>
-	<comment>Nice</comment>
-	<comment>Hello</comment>
-<comment>unknown</comment><comment>laxmikant</comment><comment>hellsing</comment></comments>
 </BlogSection>
 </Complete>
