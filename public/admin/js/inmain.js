@@ -19,6 +19,7 @@ function addback(){
 
 function addeback(){
 	document.getElementById("edit_content").style.display="none";
+	document.getElementById("select_post").style.display="block";
 }
 
 function addcontent(){
