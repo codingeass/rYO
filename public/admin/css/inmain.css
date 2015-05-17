@@ -46,7 +46,7 @@ body{
 }
 
 
-#first_form td input[type=reset]{
+#first_form td input[type=reset],#first_form td input[type=button]{
     width: 100px;
 background: #27AE60;
 font-weight: bold;
@@ -96,13 +96,10 @@ margin-top: 25px;
   font-family:  Georgia, "Times New Roman",Serif;
 }
 
-#first #s1{
+#first #selection_type{
   cursor: pointer;
 }
 
-#first #s2{
-  cursor: pointer;
-}
 #edit_content{
   text-align: center;
   font-family:  Georgia, "Times New Roman",Serif;

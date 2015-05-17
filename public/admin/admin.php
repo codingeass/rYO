@@ -21,8 +21,9 @@ require("php/sessionv.php");
 <section class="container row">
 
 <section id="first" class="col-md-3">
-	<div onclick="editacontent()" id="s1">ADD new blog post</div>
-	<div onclick="editcontent()" id="s2">Edit older Post</div>
+	<div  id="selection_type">Home</div>
+	<div onclick="editacontent()" id="selection_type">ADD new blog post</div>
+	<div onclick="editcontent()" id="selection_type">Edit older Post</div>
 </section>
 
 <section class="col-md-9">

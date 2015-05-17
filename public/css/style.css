@@ -50,6 +50,11 @@ body {
 	border-right: 1px solid grey;
 	height: 107%;
 	background-color: rgb(232, 223, 147);
+	min-height: 600px;
+}
+
+#profile_description , #secondary_section{
+	min-height: 600px;
 }
 
 #profile_description  #profile_pic {
@@ -107,5 +112,8 @@ body {
 	}
 	#secondary_section{
 		padding: 20px;
+	}
+	#secondary_section {
+		overflow-y:auto; 
 	}
 }
