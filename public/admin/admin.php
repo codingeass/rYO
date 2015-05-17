@@ -28,7 +28,12 @@ require("php/sessionv.php");
 <section class="col-md-9">
 
 <section id="select_post">
-Select Post from given below :
+	<div>
+		Select Post from given below :
+	</div>
+	<div id="select_post_list">
+	</div>
+
 </section>
 
 <section id="add_content" class="form-horizontal">
@@ -58,7 +63,7 @@ Select Post from given below :
 	</div>
 
 	</div>
-	<button onclick="upcontent()" class="btn btn-primary">Update</button>&nbsp;&nbsp;<button onclick="addback()" class="btn btn-primary">Close</button>
+	<button onclick="upcontent()" class="btn btn-primary">Update</button>&nbsp;&nbsp;<button onclick="addeback()" class="btn btn-primary">Close</button>
 	<br/><br/>	
 	<textarea rows="15"  name="content" class="form-control">
 	</textarea>

@@ -1,3 +1,4 @@
+
 		 if (window.XMLHttpRequest)
 		  {// code for IE7+, Firefox, Chrome, Opera, Safari
 		  xmlhttp=new XMLHttpRequest();
@@ -10,15 +11,15 @@
 		xmlhttp.send();
 		xmlDoc=xmlhttp.responseXML; 
 
-		var mg=document.getElementById("select_post");
+		var mg=document.getElementById("select_post_list");
 
 		x=xmlDoc.getElementsByTagName("BlogSection");
-		var mk='<br/>';		
+		var mk='';		
 		for (i=0;i<x.length;i++)
 		{
 			mk=mk+'<h3 id="select_post_title"><span onclick="display_edit(\''+i+'\')">'+x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue+'</span></h3>';
 		}
-		mg.innerHTML+=mk;
+		mg.innerHTML=mk;
 
 
 var k=0;
@@ -43,14 +44,6 @@ function display_edit(i){
 		var x=xmlDoc.getElementsByTagName("BlogSection");
 		document.getElementsByName('title')[1].value=x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue;
 		document.getElementsByName('content')[1].value=x[i].getElementsByTagName("content")[0].childNodes[0].nodeValue;
-		var mg=document.getElementById("edit_comment");
-		var s=x[i].getElementsByTagName("comment");
-		var mk="<h3>Comment</h3>";
-		for(j=0;j<s.length;j++)
-		{ 
-		  	mk=mk+"<li style='list-style:none;'>"+x[i].getElementsByTagName("comment")[j].childNodes[0].nodeValue+"&nbsp;&nbsp;&nbsp;x</li>"
-		}
-		mg.innerHTML=mk;
 }
 
 function upcontent(){

@@ -17,6 +17,10 @@ function addback(){
 	document.getElementsByName("title")[0].value="";
 }
 
+function addeback(){
+	document.getElementById("edit_content").style.display="none";
+}
+
 function addcontent(){
 
 	var title= document.getElementsByName('title')[0].value;
