@@ -3,23 +3,20 @@
 }
 
 body{
-  background: linear-gradient(rgba(196, 102, 0, 0.2), rgba(155, 89, 182, 0.2)),url('../img/gs.png');
+  font-size: 18px;
 }
 
 
+
+#page_header #page_title{
+  text-align: center;
+  font-size: 33px;
+}
+
 /* general */
 
-td input[type=button]{    
-width: 100px;
-background: #27AE60;
-font-weight: bold;
-color: white;
-border: 0 none;
-border-radius: 1px;
-cursor: pointer;
-padding: 10px 5px;
-margin: 10px 5px;
-margin-top: 25px;
+#select_post{
+  display: block;
 }
 
 #first_form{
@@ -78,6 +75,10 @@ margin-top: 25px;
 
 /* first section*/
 
+#select_post_title{
+  cursor: pointer;
+}
+
 #first_entry{
   display: block;
 }
@@ -93,7 +94,6 @@ margin-top: 25px;
 
 #add_content input{
   font-family:  Georgia, "Times New Roman",Serif;
-  font-size: 23px;
 }
 
 #first #s1{

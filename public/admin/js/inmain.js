@@ -1,16 +1,18 @@
+
 function editacontent(){
 	document.getElementById("add_content").style.display="block";
-	document.getElementById("first").style.display="none";
+	document.getElementById("edit_content").style.display="none";
+	document.getElementById("select_post").style.display="none";
 }
 
 function editcontent(){
-	document.getElementById("add_content").style.display="block";
-	document.getElementById("first").style.display="none";
+	document.getElementById("edit_content").style.display="none";
+	document.getElementById("add_content").style.display="none";
+	document.getElementById("select_post").style.display="block";
 }
 
 function addback(){
 	document.getElementById("add_content").style.display="none";
-	document.getElementById("first").style.display="block";
 	document.getElementsByName("content")[0].value="";
 	document.getElementsByName("title")[0].value="";
 }
