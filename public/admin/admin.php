@@ -18,15 +18,16 @@ require("php/sessionv.php");
 	</h1>
 </section>
 
-<section class="container row">
+<section class="container row" id="admin_page">
 
 <section id="first" class="col-md-3">
 	<div  id="selection_type">Home</div>
-	<div onclick="editacontent()" id="selection_type">ADD new blog post</div>
-	<div onclick="editcontent()" id="selection_type">Edit older Post</div>
+	<div onclick="alter_display('add_content')" id="selection_type">ADD new blog post</div>
+	<div onclick="alter_display('select_post')" id="selection_type">Edit older Post</div>
+	<div onclick="alter_display('content_views')" id="selection_type">Edit Website</div>
 </section>
 
-<section class="col-md-9">
+<section class="col-md-9" id="second">
 
 <section id="select_post">
 	<div>
@@ -34,6 +35,10 @@ require("php/sessionv.php");
 	</div>
 	<div id="select_post_list">
 	</div>
+
+</section>
+
+<section id="content_views">
 
 </section>
 

@@ -33,7 +33,7 @@ body {
 #secondary_section {
 	padding: 50px;
 	height: 105%;
-	overflow-y: scroll;
+	overflow-y: auto;
 }
 
 #inner_text > #b_author{

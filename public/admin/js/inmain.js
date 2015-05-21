@@ -1,14 +1,23 @@
+var section=['add_content','edit_content','select_post','content_views'];
 
-function editacontent(){
-	document.getElementById("add_content").style.display="block";
-	document.getElementById("edit_content").style.display="none";
-	document.getElementById("select_post").style.display="none";
+//
+var xmlhttp=false;
+if (window.XMLHttpRequest)
+{// code for IE7+, Firefox, Chrome, Opera, Safari
+	xmlhttp=new XMLHttpRequest();
 }
+else
+{// code for IE6, IE5
+	xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+}
+//
 
-function editcontent(){
-	document.getElementById("edit_content").style.display="none";
-	document.getElementById("add_content").style.display="none";
-	document.getElementById("select_post").style.display="block";
+function alter_display(section_type){
+	var i;
+	for (i = 0, len = section.length; i < len; i++) { 
+    document.getElementById(section[i]).style.display="none";
+	}
+	document.getElementById(section_type).style.display="block";
 }
 
 function addback(){
@@ -26,15 +35,7 @@ function addcontent(){
 
 	var title= document.getElementsByName('title')[0].value;
 	var content=document.getElementsByName("content")[0].value;	
-			var xmlhttp=false;
-			if (window.XMLHttpRequest)
-			{// code for IE7+, Firefox, Chrome, Opera, Safari
-				xmlhttp=new XMLHttpRequest();
-			}
-			else
-			{// code for IE6, IE5
-				xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-			}
+			
 			if(xmlhttp)
 			{
 				

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE webInfo [
+<!ELEMENT Complete (BlogSection , title , author , content)>
+<!ELEMENT BlogSection (title , author , content)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT content (#PCDATA)>
+]>
+<website>
+	<username>
+	</username>
+	<pageTitle>
+	</pageTitle>
+	<toollinks>
+	<links>
+	<googleAnalytics>
+	</googleAnalytics>
+	<disqus>
+	</disqus>
+	</links>
+	<socialNetworks>
+		<account type="facebook">
+		</account>
+		<account type="twitter">
+		</account>
+		<account type="github">
+		</account>
+		<account type="linkedin">
+		</account>
+	</socialNetworks>
+</website>
