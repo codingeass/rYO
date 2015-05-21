@@ -24,7 +24,7 @@ require("php/sessionv.php");
 	<div  id="selection_type">Home</div>
 	<div onclick="alter_display('add_content')" id="selection_type">ADD new blog post</div>
 	<div onclick="alter_display('select_post')" id="selection_type">Edit older Post</div>
-	<div onclick="alter_display('content_views')" id="selection_type">Edit Website</div>
+	<div onclick="website_attributes('content_views')" id="selection_type">Edit Website</div>
 </section>
 
 <section class="col-md-9" id="second">

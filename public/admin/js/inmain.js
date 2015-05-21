@@ -1,16 +1,5 @@
 var section=['add_content','edit_content','select_post','content_views'];
 
-//
-var xmlhttp=false;
-if (window.XMLHttpRequest)
-{// code for IE7+, Firefox, Chrome, Opera, Safari
-	xmlhttp=new XMLHttpRequest();
-}
-else
-{// code for IE6, IE5
-	xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-}
-//
 
 function alter_display(section_type){
 	var i;
@@ -19,6 +8,7 @@ function alter_display(section_type){
 	}
 	document.getElementById(section_type).style.display="block";
 }
+document.onload=function(){alter_display('content_views')};
 
 function addback(){
 	document.getElementById("add_content").style.display="none";
@@ -38,7 +28,15 @@ function addcontent(){
 			
 			if(xmlhttp)
 			{
-				
+				var xmlhttp=false;
+				if (window.XMLHttpRequest)
+				{// code for IE7+, Firefox, Chrome, Opera, Safari
+					xmlhttp=new XMLHttpRequest();
+				}
+				else
+				{// code for IE6, IE5
+					xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+				}	
 				xmlhttp.open("GET",'php/addcontent.php?title='+title+'&content='+content);
 				xmlhttp.send();
 				xmlhttp.onreadystatechange=function()
@@ -97,4 +95,66 @@ function first_fun(){
 	}
 	else
 		alert("password don't match");
+}
+
+function xml_request(page,element){
+	var xmlhttp=false;
+	if (window.XMLHttpRequest)
+	{// code for IE7+, Firefox, Chrome, Opera, Safari
+		xmlhttp=new XMLHttpRequest();
+	}
+	else
+	{// code for IE6, IE5
+		xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	if(xmlhttp)
+	{
+		
+		xmlhttp.open("GET",'views/'+page);
+		xmlhttp.send();
+		xmlhttp.onreadystatechange=function()
+		{
+			if(xmlhttp.readyState==4 && xmlhttp.status==200)
+			{
+				if(xmlhttp.responseText)
+				{
+					document.getElementById(element).innerHTML=xmlhttp.responseText;
+				}
+			}				
+		}				
+	}
+}
+
+function website_attribute_xml()
+{
+	var xmlhttp=false;
+	if (window.XMLHttpRequest)
+	{// code for IE7+, Firefox, Chrome, Opera, Safari
+		xmlhttp=new XMLHttpRequest();
+	}
+	else
+	{// code for IE6, IE5
+		xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	if(xmlhttp)
+	{
+		
+		xmlhttp.open("GET",'../xml/webInfo.xml');
+		xmlhttp.send();
+		xmlhttp.onreadystatechange=function()
+		{
+			if(xmlhttp.readyState==4 && xmlhttp.status==200)
+			{
+				if(xmlhttp.responseText)
+				{
+					return xmlhttp.responseText;
+				}
+			}				
+		}				
+	}	
+}
+function website_attributes(section_type)
+{
+	alter_display(section_type);
+	xml_request('edit_website.html','content_views');
 }
