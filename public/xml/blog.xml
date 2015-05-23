@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE chatting [
-<!ELEMENT Complete (BlogSection , id , title , author , content)>
+<!ELEMENT Complete (BlogSection , id ,sequence, title , author , content)>
 <!ELEMENT BlogSection (id ,sequence, title , author , content)>
 <!ELEMENT id (#PCDATA)>
 <!ELEMENT sequence (#PCDATA)>
 <!ELEMENT title (#PCDATA)>
 <!ELEMENT author (#PCDATA)>
 <!ELEMENT content (#PCDATA)>
+<!ELEMENT time (#PCDATA)>
 ]>
 <Complete>
 <BlogSection>
@@ -17,7 +18,7 @@
 Codechef
 </author>
 <content>Cloud computing allows application software to be operated using internet-enabled devices. Clouds can be classified as public, private, and hybrid. &lt;br/&gt;Cloud computing relies on sharing of resources to achieve coherence and economies of scale, similar to a utility (like the electricity grid) over a network. At the foundation of cloud computing is the broader concept of converged infrastructure and shared services.&lt;br/&gt; Cloud computing, or in simpler shorthand just "the cloud", also focuses on maximizing the effectiveness of the shared resources. Cloud resources are usually not only shared by multiple users but are also dynamically reallocated per demand. This can work for allocating resources to users. For example, a cloud computer facility that serves European users during European business hours with a specific application (e.g., email) may reallocate the same resources to serve North American users during North America's business hours with a different application (e.g., a web server). This approach should maximize the use of computing power thus reducing environmental damage as well since less power, air conditioning, rack space, etc. are required for a variety of functions. With cloud computing, multiple users can access a single server to retrieve and update their data without purchasing licenses for different applications.</content>	
-
+<time></time>
 </BlogSection>
 <BlogSection>
 <id>2</id>
@@ -36,8 +37,11 @@ In this problem, you need to answer the following two queries:
 Select k1 k2: report l and r, such that T[l..r] are assigned values k1 and k2.
 Rank l r: output the assigned k1 and k2 of T[l..r].
 </content>	
+<time></time>
 </BlogSection>
 <BlogSection>
 	<id>3</id>
 	<sequence>3</sequence>
-	<title>Machine learning</title><author>amandeep</author><content>Machine learning is a subfield of computer science that evolved from the study of pattern recognition and computational learning theory in artificial intelligence. Machine learning explores the construction and study of algorithms that can learn from and make predictions on data. Such algorithms operate by building a model from example inputs in order to make data-driven predictions or decisions, rather than following strictly static program instructions.&lt;br/&gt;Machine learning is closely related to and often overlaps with computational statistics; a discipline that also specializes in prediction-making. It has strong ties to mathematical optimization, which deliver methods, theory and application domains to the field. Machine learning is employed in a range of computing tasks where designing and programming explicit, rule-based algorithms is infeasible. Example applications include spam filtering, optical character recognition (OCR), search engines and computer vision. Machine learning is sometimes conflated with data mining, although that focuses more on exploratory data analysis. Machine learning and pattern recognition "can be viewed as two facets of the same field."vii&lt;br/&gt;When employed in industrial contexts, machine learning methods may be referred to as predictive analytics or predictive modelling.</content></BlogSection></Complete>
+	<title>Machine learning</title><author>amandeep</author><content>Machine learning is a subfield of computer science that evolved from the study of pattern recognition and computational learning theory in artificial intelligence. Machine learning explores the construction and study of algorithms that can learn from and make predictions on data. Such algorithms operate by building a model from example inputs in order to make data-driven predictions or decisions, rather than following strictly static program instructions.&lt;br/&gt;Machine learning is closely related to and often overlaps with computational statistics; a discipline that also specializes in prediction-making. It has strong ties to mathematical optimization, which deliver methods, theory and application domains to the field. Machine learning is employed in a range of computing tasks where designing and programming explicit, rule-based algorithms is infeasible. Example applications include spam filtering, optical character recognition (OCR), search engines and computer vision. Machine learning is sometimes conflated with data mining, although that focuses more on exploratory data analysis. Machine learning and pattern recognition "can be viewed as two facets of the same field."vii&lt;br/&gt;When employed in industrial contexts, machine learning methods may be referred to as predictive analytics or predictive modelling.</content>
+<time></time>
+</BlogSection></Complete>
