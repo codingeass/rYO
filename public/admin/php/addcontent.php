@@ -1,6 +1,6 @@
 <?php
 	require("sessionv.php");
-	if(isset($_REQUEST["title"])&&isset($_REQUEST["content"])){
+	if(isset($_REQUEST["title"])&&isset($_REQUEST["content"])&&isset($_REQUEST["tags"])){	
 		$xml=simplexml_load_file("../../xml/blog.xml");
 		$blogsection=$xml->addChild('BlogSection');
 		$xml->max_id[0]=intval($xml->max_id[0])+1;
@@ -11,6 +11,8 @@
 		$blogsection->addChild('title',htmlspecialchars(urldecode(strip_tags($_REQUEST["title"])), ENT_QUOTES));
 		$blogsection->addChild('author',htmlspecialchars(urldecode(strip_tags($_SESSION["user"])), ENT_QUOTES));
 		$blogsection->addChild('content',htmlspecialchars(urldecode(strip_tags($_REQUEST["content"])), ENT_QUOTES));
+		$blogsection
+		$tags=explode(",",$_REQUEST["tags"]);
 		$xml->saveXML('../../xml/blog.xml');
 		echo "Correct";
 	}
