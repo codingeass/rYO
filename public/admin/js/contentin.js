@@ -82,7 +82,7 @@ function upcontent(){
 	if(xmlhttp)
 	{
 		
-		xmlhttp.open("GET",'php/upcontent.php?title='+title+'&content='+content+'&i='+k+'&tags='+tags+'&oldTag='+oldTag);
+		xmlhttp.open("GET",'php/upcontent.php?title='+encodeURI(title)+'&content='+encodeURI(content)+'&i='+k+'&tags='+encodeURI(tags)+'&oldTag='+encodeURI(oldTag));
 		xmlhttp.send();
 		xmlhttp.onreadystatechange=function()
 		{
