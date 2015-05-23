@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE chatting [
 <!ELEMENT Complete (BlogSection , id , title , author , content)>
-<!ELEMENT BlogSection (id , title , author , content)>
+<!ELEMENT BlogSection (id ,sequence, title , author , content)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT sequence (#PCDATA)>
 <!ELEMENT title (#PCDATA)>
 <!ELEMENT author (#PCDATA)>
 <!ELEMENT content (#PCDATA)>
