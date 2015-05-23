@@ -37,7 +37,7 @@ function display_edit(i){
 		  {// code for IE6, IE5
 		  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
 		  }
-		  var k=i;
+		  k=i;
 		xmlhttp.open("GET","..\\xml\\blog.xml",false);
 		xmlhttp.send();
 		xmlDoc=xmlhttp.responseXML; 
@@ -61,34 +61,41 @@ function display_edit(i){
 }
 
 function upcontent(){
-		var title= document.getElementsByName('title')[1].value;
-	var content=document.getElementsByName("content")[1].value;	
-			var xmlhttp=false;
-			if (window.XMLHttpRequest)
-			{// code for IE7+, Firefox, Chrome, Opera, Safari
-				xmlhttp=new XMLHttpRequest();
-			}
-			else
-			{// code for IE6, IE5
-				xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-			}
-			if(xmlhttp)
+	var title= document.getElementsByName('title')[1].value;
+	var content=document.getElementsByName("content")[1].value;
+	var x=document.getElementById('tags_add_content_1');
+	var tags="";
+	//document.write(x.options.length);
+	for(var i=0;i<x.options.length;i++){
+		tags+=x.options[i].value+",";
+	}
+	var oldTag=document.getElementById("initial_tags").innerHTML;
+	var xmlhttp=false;
+	if (window.XMLHttpRequest)
+	{// code for IE7+, Firefox, Chrome, Opera, Safari
+		xmlhttp=new XMLHttpRequest();
+	}
+	else
+	{// code for IE6, IE5
+		xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	if(xmlhttp)
+	{
+		
+		xmlhttp.open("GET",'php/upcontent.php?title='+title+'&content='+content+'&i='+k+'&tags='+tags+'&oldTag='+oldTag);
+		xmlhttp.send();
+		xmlhttp.onreadystatechange=function()
+		{
+			if(xmlhttp.readyState==4 && xmlhttp.status==200)
 			{
-				
-				xmlhttp.open("GET",'php/upcontent.php?title='+title+'&content='+content+'&i='+k);
-				xmlhttp.send();
-				xmlhttp.onreadystatechange=function()
+				if(xmlhttp.responseText=="Correct")
 				{
-					if(xmlhttp.readyState==4 && xmlhttp.status==200)
-					{
-						if(xmlhttp.responseText=="Correct")
-						{
-							alert("Updated Successfully");							//window.location.assign('admin.php');
-						}
-						else
-							alert("Error occured");
-					}				
-				}				
-			}
+					alert("Updated Successfully");							//window.location.assign('admin.php');
+				}
+				else
+					alert("Error occured");
+			}				
+		}				
+	}
 
 }
