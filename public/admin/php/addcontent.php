@@ -11,8 +11,13 @@
 		$blogsection->addChild('title',htmlspecialchars(urldecode(strip_tags($_REQUEST["title"])), ENT_QUOTES));
 		$blogsection->addChild('author',htmlspecialchars(urldecode(strip_tags($_SESSION["user"])), ENT_QUOTES));
 		$blogsection->addChild('content',htmlspecialchars(urldecode(strip_tags($_REQUEST["content"])), ENT_QUOTES));
-		$blogsection
+		$tags_add=$blogsection->addChild('tags');
 		$tags=explode(",",$_REQUEST["tags"]);
+		for ($i=0; $i < strlen($tags)-1 ; $i++) { 
+			$attr=$tags_add->addChild('tag',$tags[$i]);
+			
+			$attr->addAttribute('id', 'stars');
+		}
 		$xml->saveXML('../../xml/blog.xml');
 		echo "Correct";
 	}
