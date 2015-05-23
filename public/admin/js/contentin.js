@@ -37,13 +37,27 @@ function display_edit(i){
 		  {// code for IE6, IE5
 		  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
 		  }
-		  k=i;
+		  var k=i;
 		xmlhttp.open("GET","..\\xml\\blog.xml",false);
 		xmlhttp.send();
 		xmlDoc=xmlhttp.responseXML; 
 		var x=xmlDoc.getElementsByTagName("BlogSection");
 		document.getElementsByName('title')[1].value=x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue;
 		document.getElementsByName('content')[1].value=x[i].getElementsByTagName("content")[0].childNodes[0].nodeValue;
+		var tag_content="";
+		var tags=x[i].getElementsByTagName("tags")[0];
+		var tag=tags.getElementsByTagName("tag");
+		i=0;
+		$('#edit_content select').tagsinput('removeAll');
+		while(i<tag.length)
+		{
+			tag_content+=tag[i].childNodes[0].nodeValue+",";
+			$('#edit_content select').tagsinput('add', tag[i].childNodes[0].nodeValue);
+			i++;
+		}
+		//document.getElementById('edit_content').getElementsByClassName('bootstrap-tagsinput')[0].innerHTML=element_addition+'<input type="text" placeholder="" style="width: 3em !important;" size="1">';
+		document.getElementById('initial_tags').innerHTML=tag_content;
+		//document.getElementById('tags_add_content_1').innerHTML=old_tag;
 }
 
 function upcontent(){

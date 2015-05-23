@@ -126,3 +126,6 @@ margin-top: 25px;
 #admin_page #content_views{
   display: none;
 }
+.tag_div_section input{
+    font-size: 17px;
+}

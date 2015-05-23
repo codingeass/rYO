@@ -59,7 +59,7 @@ require("php/sessionv.php");
 	<textarea rows="15"  name="content" class="form-control">
 	</textarea>
 
-	<div class="row">
+	<div class="row tag_div_section">
 	<label class="control-label col-sm-2" for="tags_add_content">Tags:</label>
 	<div class="col-sm-10" style="font-size:16px;margin-top:10px;text-align:left;">
 	<select id="tags_add_content"   multiple data-role="tagsinput">
@@ -83,6 +83,19 @@ require("php/sessionv.php");
 	<br/><br/>	
 	<textarea rows="15"  name="content" class="form-control">
 	</textarea>
+	<div id="initial_tags" style="display:none;">
+	</div>
+
+	<div class="row tag_div_section">
+	<label class="control-label col-sm-2" for="tags_add_content">Tags:</label>
+	<div class="col-sm-10" style="font-size:16px;margin-top:10px;text-align:left;">
+	
+	<select id="tags_add_content_1"   multiple data-role="tagsinput">
+	</select>
+
+	</div>
+	</div>
+
 </section>
 
 </section>
@@ -91,12 +104,9 @@ require("php/sessionv.php");
 
 <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="../js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/contentin.js"></script>
-<script type="text/javascript">document.onload=alter_display('add_content');</script>
+<script type="text/javascript">document.onload=display_edit('3');</script>
 <script src="js/bootstrap-tagsinput.min.js"></script>
-<script>
-
-</script>
+<script type="text/javascript" src="js/contentin.js"></script>
 
 </body>
 </html>
