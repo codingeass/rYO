@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE blog [
-<!ELEMENT Complete (max_id,max_sequence,BlogSection, id ,sequence, title , author , content,tags,tag,time)>
-<!ELEMENT BlogSection (id ,sequence, title , author , content, time)>
-<!ELEMENT tags (tag+)>
+<!ELEMENT Complete (max_id , max_sequence , BlogSection , id , sequence , title , author , content , tags , tag , time)>
+<!ELEMENT BlogSection (id , sequence , title , author , content , time)>
+<!ELEMENT tags (tag)+>
 <!ELEMENT max_id (#PCDATA)>
 <!ELEMENT max_sequence (#PCDATA)>
 <!ELEMENT id (#PCDATA)>
@@ -12,13 +12,11 @@
 <!ELEMENT author (#PCDATA)>
 <!ELEMENT content (#PCDATA)>
 <!ELEMENT time (#PCDATA)>
-<!ATTLIST tag 
-            id    CDATA    #REQUIRED
->
+<!ATTLIST tag id CDATA #REQUIRED>
 ]>
 <Complete>
-<max_id>3</max_id>
-<max_sequence>3</max_sequence>
+<max_id>4</max_id>
+<max_sequence>4</max_sequence>
 <BlogSection>
 <id>1</id>
 <sequence>1</sequence>
@@ -74,4 +72,4 @@ Rank l r: output the assigned k1 and k2 of T[l..r].
 </tags>
 
 <time>12th Feb 2015</time>
-</BlogSection></Complete>
+</BlogSection><BlogSection><id>4</id><sequence>4</sequence><time>May 23, 2015, 2:35 pm</time><title>yo man this my new blog </title><author>amandeep</author><content>hey! wats'up what are you all doing</content><tags><tag id="2">team</tag><tag id="3">node</tag></tags></BlogSection></Complete>

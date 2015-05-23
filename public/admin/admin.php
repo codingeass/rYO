@@ -63,11 +63,6 @@ require("php/sessionv.php");
 	<label class="control-label col-sm-2" for="tags_add_content">Tags:</label>
 	<div class="col-sm-10" style="font-size:16px;margin-top:10px;text-align:left;">
 	<select id="tags_add_content"   multiple data-role="tagsinput">
-		<option  value="Amsterdam">Amsterdam</option>
-		<option value="Washington">Washington</option>
-		<option value="Sydney">Sydney</option>
-		<option value="Beijing">Beijing</option>
-		<option value="Cairo">Cairo</option>
 	</select>
 	</div>
 	</div>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE tags [
-<!ELEMENT tags (max_id ,tag ,id , name, blog_id )>
-<!ELEMENT tag (id , name , blogs, blog_id)>
+<!ELEMENT tags (max_id , tag , id , name , blog_id)>
+<!ELEMENT tag (id , name , blogs , blog_id)>
 <!ELEMENT blogs (blog_id)>
 <!ELEMENT max_id (#PCDATA)>
 <!ELEMENT id (#PCDATA)>
@@ -9,9 +9,7 @@
 <!ELEMENT blog_id (#PCDATA)>
 ]>
 <tags>
-	<max_id>
-		1
-	</max_id>
+	<max_id>3</max_id>
 	<tag>
 		<id>
 			1
@@ -28,4 +26,4 @@
 			</blog_id>
 		</blogs>
 	</tag>
-</tags>
+<tag><id>2</id><name>team</name><blogs><blog_id>4</blog_id></blogs></tag><tag><id>3</id><name>node</name><blogs><blog_id>4</blog_id></blogs></tag></tags>
