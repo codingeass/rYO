@@ -3,9 +3,9 @@
 	if(isset($_REQUEST["title"])&&isset($_REQUEST["content"])&&isset($_REQUEST["i"])){
 		$xml=simplexml_load_file("../../xml/blog.xml");
 		$blogsection=$xml->BlogSection[intval($_REQUEST["i"])];
-		$blogsection->addChild('time',date("F j, Y, g:i a"));
-		$blogsection->title=$_REQUEST["title"];
-		$blogsection->content=$_REQUEST["content"];
+		$blogsection->time=date("F j, Y, g:i a");
+		$blogsection->title=htmlspecialchars(urldecode(strip_tags($_REQUEST["title"])), ENT_QUOTES);
+		$blogsection->content=htmlspecialchars(urldecode(strip_tags($_REQUEST["content"])), ENT_QUOTES);
 		$xml->saveXML('../../xml/blog.xml');
 		echo "Correct";
 	}
