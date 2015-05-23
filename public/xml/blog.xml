@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE chatting [
-<!ELEMENT Complete (BlogSection , id ,sequence, title , author , content)>
+<!ELEMENT Complete (max_id,max_sequence,BlogSection , id ,sequence, title , author , content)>
 <!ELEMENT BlogSection (id ,sequence, title , author , content)>
+<!ELEMENT max_id (#PCDATA)>
+<!ELEMENT max_sequence (#PCDATA)>
 <!ELEMENT id (#PCDATA)>
 <!ELEMENT sequence (#PCDATA)>
 <!ELEMENT title (#PCDATA)>
@@ -10,6 +12,8 @@
 <!ELEMENT time (#PCDATA)>
 ]>
 <Complete>
+<max_id>3</max_id>
+<max_sequence>3</max_sequence>
 <BlogSection>
 <id>1</id>
 <sequence>1</sequence>
