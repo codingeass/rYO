@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE tags [
+<!ELEMENT tags (tag, id , name, blog_id )>
+<!ELEMENT tag (id , name , blog_id)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT blog_id (#PCDATA)>
+]>
+<tags>
+	<tag>
+		<id>
+			1
+		</id>
+		<name>
+			cloud
+		</name>
+		<blog_id>
+			1
+		</blog_id>
+	</tag>
+</tags>
