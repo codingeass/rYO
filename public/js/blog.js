@@ -34,5 +34,13 @@ var url = (function(a) {
 		var mk="<center><h1 id='b_title'>"+x[url["uv"]].getElementsByTagName("title")[0].childNodes[0].nodeValue+"</h1></center>";
 		mk=mk+"<div id='b_author'>Author:"+x[url["uv"]].getElementsByTagName("author")[0].childNodes[0].nodeValue+"</div>"
 		mk=mk+"<div id='b_content'>"+x[url["uv"]].getElementsByTagName("content")[0].childNodes[0].nodeValue+"</div>";
-		mk=mk+"<div id='b_sub_header'>Last Updated On:"+x[url["uv"]].getElementsByTagName("time")[0].childNodes[0].nodeValue+"</div>";
+		var tags="";
+		var i=0;
+		var tags_node=x[url["uv"]].getElementsByTagName("tags")[0].getElementsByTagName("tag");
+		while(i<tags_node.length)
+		{
+			tags+="[ <a>"+tags_node[i].childNodes[0].nodeValue+"</a> ]";
+			i++;
+		}
+		mk=mk+"<div id='b_sub_header'>Last Updated On:"+x[url["uv"]].getElementsByTagName("time")[0].childNodes[0].nodeValue+"&nbsp;&nbsp;&nbsp;    Tags: <span>"+tags+"</span></div>";
 		mg.innerHTML=mk;
