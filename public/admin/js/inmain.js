@@ -40,7 +40,7 @@ function addcontent(){
 		{// code for IE6, IE5
 			xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
 		}
-		xmlhttp.open("GET",'php/addcontent.php?title='+encodeURI(title)+'&content='+encodeURI(content)+'&tags='+encodeURI(tags));
+		xmlhttp.open("GET",'php/addcontent.php?title='+encodeURIComponent(title)+'&content='+encodeURIComponent(content)+'&tags='+encodeURIComponent(tags));
 		xmlhttp.send();
 		xmlhttp.onreadystatechange=function()
 		{

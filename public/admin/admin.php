@@ -85,6 +85,9 @@ require("php/sessionv.php");
 	</textarea>
 	<div id="initial_tags" style="display:none;">
 	</div>
+	
+	<div id="tester_tag" style="display:none;">
+	</div>
 
 	<div class="row tag_div_section">
 	<label class="control-label col-sm-2" for="tags_add_content">Tags:</label>

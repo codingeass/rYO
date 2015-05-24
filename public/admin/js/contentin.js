@@ -42,8 +42,13 @@ function display_edit(i){
 		xmlhttp.send();
 		xmlDoc=xmlhttp.responseXML; 
 		var x=xmlDoc.getElementsByTagName("BlogSection");
-		document.getElementsByName('title')[1].value=x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue;
-		document.getElementsByName('content')[1].value=x[i].getElementsByTagName("content")[0].childNodes[0].nodeValue;
+		//tester to convert the special html to original value
+
+		var tester =document.getElementById("tester_tag");
+		tester.innerHTML=x[i].getElementsByTagName("title")[0].childNodes[0].nodeValue;
+		document.getElementsByName('title')[1].value=tester.innerHTML;
+		tester.innerHTML=x[i].getElementsByTagName("content")[0].childNodes[0].nodeValue;
+		document.getElementsByName('content')[1].value=tester.innerHTML;
 		var tag_content="";
 		var tags=x[i].getElementsByTagName("tags")[0];
 		var tag=tags.getElementsByTagName("tag");
@@ -51,8 +56,9 @@ function display_edit(i){
 		$('#edit_content select').tagsinput('removeAll');
 		while(i<tag.length)
 		{
-			tag_content+=tag[i].childNodes[0].nodeValue+",";
-			$('#edit_content select').tagsinput('add', tag[i].childNodes[0].nodeValue);
+			tester.innerHTML=tag[i].childNodes[0].nodeValue;
+			tag_content+=tester.innerHTML+",";
+			$('#edit_content select').tagsinput('add', tester.innerHTML);
 			i++;
 		}
 		//document.getElementById('edit_content').getElementsByClassName('bootstrap-tagsinput')[0].innerHTML=element_addition+'<input type="text" placeholder="" style="width: 3em !important;" size="1">';
@@ -82,7 +88,7 @@ function upcontent(){
 	if(xmlhttp)
 	{
 		
-		xmlhttp.open("GET",'php/upcontent.php?title='+encodeURI(title)+'&content='+encodeURI(content)+'&i='+k+'&tags='+encodeURI(tags)+'&oldTag='+encodeURI(oldTag));
+		xmlhttp.open("GET",'php/upcontent.php?title='+encodeURIComponent(title)+'&content='+encodeURIComponent(content)+'&i='+k+'&tags='+encodeURIComponent(tags)+'&oldTag='+encodeURIComponent(oldTag));
 		xmlhttp.send();
 		xmlhttp.onreadystatechange=function()
 		{
