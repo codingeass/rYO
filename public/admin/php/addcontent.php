@@ -7,12 +7,13 @@
 		$xml->max_sequence[0]=intval($xml->max_sequence[0])+1;
 		$blogsection->addChild('id',$xml->max_id[0]);
 		$blogsection->addChild('sequence',$xml->max_sequence[0]);
-		$blogsection->addChild('time',date("F j, Y, g:i a"));
+		//$blogsection->addChild('time',date("F j, Y, g:i a"));
+		$blogsection->addChild('time',date("F j, Y"));
 		$blogsection->addChild('title',htmlspecialchars(urldecode(strip_tags($_REQUEST["title"])), ENT_QUOTES));
 		$blogsection->addChild('author',htmlspecialchars(urldecode(strip_tags($_SESSION["user"])), ENT_QUOTES));
 		$blogsection->addChild('content',htmlspecialchars(urldecode(strip_tags($_REQUEST["content"])), ENT_QUOTES));
 		$tags_add=$blogsection->addChild('tags');
-		$tags=explode(",",$_REQUEST["tags"]);
+		$tags=explode(",",htmlspecialchars(urldecode($_REQUEST["tags"])));
 		//writing slow code make it faster later
 		//remove dupplicate tags in the value
 		$tags_xml_file=simplexml_load_file("../../xml/tag.xml");	
