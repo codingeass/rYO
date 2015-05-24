@@ -11,10 +11,9 @@ var url = (function(a) {
     		}
    	 return b;
 		})(window.location.search.substr(1).split('&'))
-		//if(url["uv"])
-  	  //alert(""+qs["topic"]);
 
-
+  	  if(url["uv"]==null)
+  	  	window.location="index.html"
 		if (window.XMLHttpRequest)
 		  {// code for IE7+, Firefox, Chrome, Opera, Safari
 		  xmlhttp=new XMLHttpRequest();
@@ -39,7 +38,8 @@ var url = (function(a) {
 		var tags_node=x[url["uv"]].getElementsByTagName("tags")[0].getElementsByTagName("tag");
 		while(i<tags_node.length)
 		{
-			tags+="[ <a>"+tags_node[i].childNodes[0].nodeValue+"</a> ]";
+			//take care of encoding of the url here
+			tags+="[ <a style='cursor:pointer;' href='tag.html?tag="+tags_node[i].childNodes[0].nodeValue+"'>"+tags_node[i].childNodes[0].nodeValue+"</a> ]";
 			i++;
 		}
 		mk=mk+"<div id='b_sub_header'>Last Updated On:"+x[url["uv"]].getElementsByTagName("time")[0].childNodes[0].nodeValue+"&nbsp;&nbsp;&nbsp;    Tags: <span>"+tags+"</span></div>";

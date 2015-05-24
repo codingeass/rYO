@@ -45,6 +45,11 @@ body {
 	font-size: 19px;
 }
 
+#inner_text > #b_sub_header{
+	font-size: 16px;
+	margin-top: 10px;
+}
+
 #profile_description {
 	padding-top: 100px;
 	border-right: 1px solid grey;
