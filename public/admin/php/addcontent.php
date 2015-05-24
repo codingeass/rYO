@@ -8,7 +8,7 @@
 		$blogsection->addChild('id',$xml->max_id[0]);
 		$blogsection->addChild('sequence',$xml->max_sequence[0]);
 		//$blogsection->addChild('time',date("F j, Y, g:i a"));
-		$blogsection->addChild('time',date("F j, Y"));
+		$blogsection->addChild('time',date("D ,F j Y"));
 		$blogsection->addChild('title',htmlspecialchars(urldecode(strip_tags($_REQUEST["title"])), ENT_QUOTES));
 		$blogsection->addChild('author',htmlspecialchars(urldecode(strip_tags($_SESSION["user"])), ENT_QUOTES));
 		$blogsection->addChild('content',htmlspecialchars(urldecode(strip_tags($_REQUEST["content"])), ENT_QUOTES));

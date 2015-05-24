@@ -34,5 +34,5 @@ var url = (function(a) {
 		var mk="<center><h1 id='b_title'>"+x[url["uv"]].getElementsByTagName("title")[0].childNodes[0].nodeValue+"</h1></center>";
 		mk=mk+"<div id='b_author'>Author:"+x[url["uv"]].getElementsByTagName("author")[0].childNodes[0].nodeValue+"</div>"
 		mk=mk+"<div id='b_content'>"+x[url["uv"]].getElementsByTagName("content")[0].childNodes[0].nodeValue+"</div>";
-		
+		mk=mk+"<div id='b_sub_header'>Last Updated On:"+x[url["uv"]].getElementsByTagName("time")[0].childNodes[0].nodeValue+"</div>";
 		mg.innerHTML=mk;
