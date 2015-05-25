@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE webInfo [
-<!ELEMENT Complete (BlogSection , title , author , content)>
+<!ELEMENT website (name , about , pageHeading , pageTitle,links , googleAnalytics , disqus,mail,socialNetworks,account+)>
 <!ELEMENT BlogSection (title , author , content)>
-<!ELEMENT title (#PCDATA)>
-<!ELEMENT author (#PCDATA)>
-<!ELEMENT content (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT about (#PCDATA)>
+<!ELEMENT pageHeading (#PCDATA)>
+<!ELEMENT pageTitle (#PCDATA)>
+<!ELEMENT links (googleAnalytics,disqus)>
+<!ELEMENT googleAnalytics (#PCDATA)>
+<!ELEMENT disqus (#PCDATA)>
+<!ELEMENT mail (#PCDATA)>
+<!ELEMENT socialNetworks (account)+>
+<!ELEMENT account (#PCDATA)>
+<!ATTLIST account type CDATA #REQUIRED>
 ]>
 <website>
-	<username>
-	</username>
-	<pageHeading>
-	</pageHeading>
-	<pageTitle>
-	</pageTitle>
-	<toollinks>
+	<name>AMANDEEP GUPTA</name>
+	<about>Web Developer | Programmer</about>
+	<pageHeading></pageHeading>
+	<pageTitle>Blog</pageTitle>
 	<links>
-	<googleAnalytics>
-	</googleAnalytics>
-	<disqus>
-	</disqus>
+	<googleAnalytics></googleAnalytics>
+	<disqus>blogxml</disqus>
 	</links>
+	<mail>amandeepgupta@rocketmail.com</mail>
 	<socialNetworks>
-		<account type="facebook">
-		</account>
-		<account type="twitter">
-		</account>
-		<account type="github">
-		</account>
-		<account type="linkedin">
-		</account>
+		<account type="facebook">amandeeptheviper</account>
+		<account type="twitter">codingeass</account>
+		<account type="github">codingeass</account>
+		<account type="linkedin">codingeass</account>
 	</socialNetworks>
 </website>
