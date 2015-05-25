@@ -28,6 +28,6 @@ var info = function(){
 		value[x[i].getAttribute('type')]=x[i].childNodes[0].nodeValue;
 		i++;
 	}
-	document.title=info["pageTitle"];
+	//document.title=info["pageTitle"];
 	return value;
 }(document.onload);
