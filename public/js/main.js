@@ -7,7 +7,7 @@ else
   {// code for IE6, IE5
   xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
   }
-xmlhttp.open("GET","public\\xml\\blog.xml",false);
+xmlhttp.open("GET","public/xml/blog.xml",false);
 xmlhttp.send();
 xmlDoc=xmlhttp.responseXML; 
 
