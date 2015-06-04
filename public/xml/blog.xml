@@ -15,8 +15,8 @@
 <!ATTLIST tag id CDATA #REQUIRED>
 ]>
 <Complete>
-<max_id>4</max_id>
-<max_sequence>4</max_sequence>
+<max_id>5</max_id>
+<max_sequence>5</max_sequence>
 <BlogSection>
 <id>1</id>
 <sequence>1</sequence>
@@ -62,4 +62,4 @@ Rank l r: output the assigned k1 and k2 of T[l..r].
 </tags>
 
 <time>12th Feb 2015</time>
-</BlogSection><BlogSection><id>4</id><sequence>4</sequence><time>May 24, 2015</time><title>yo man this my new blog </title><author>amandeep</author><content>hey! wats&amp;#039;up what are you all doing mk</content><tags><tag id="2">team</tag></tags></BlogSection></Complete>
+</BlogSection><BlogSection><id>4</id><sequence>4</sequence><time>May 24, 2015</time><title>yo man this my new blog </title><author>amandeep</author><content>hey! wats&amp;#039;up what are you all doing mk</content><tags><tag id="2">team</tag></tags></BlogSection><BlogSection><id>5</id><sequence>5</sequence><time>Tue ,May 26 2015</time><title>nvkrnvrk</title><author>amandeep</author><content>	bcrjcbjrbc</content><tags><tag id="4">bxb</tag><tag id="5">jrnc</tag></tags></BlogSection></Complete>

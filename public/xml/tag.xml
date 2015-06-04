@@ -9,7 +9,7 @@
 <!ELEMENT blog_id (#PCDATA)>
 ]>
 <tags>
-	<max_id>3</max_id>
+	<max_id>5</max_id>
 	<tag>
 		<id>
 			1
@@ -19,4 +19,4 @@
 			<blog_id>2</blog_id><blog_id>1</blog_id>
 		</blogs>
 	</tag>
-<tag><id>2</id><name>team</name><blogs><blog_id>4</blog_id></blogs></tag><tag><id>3</id><name>node</name><blogs/></tag></tags>
+<tag><id>2</id><name>team</name><blogs><blog_id>4</blog_id></blogs></tag><tag><id>3</id><name>node</name><blogs/></tag><tag><id>4</id><name>bxb</name><blogs><blog_id>5</blog_id></blogs></tag><tag><id>5</id><name>jrnc</name><blogs><blog_id>5</blog_id></blogs></tag></tags>
