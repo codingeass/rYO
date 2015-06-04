@@ -7,7 +7,7 @@ else
   {// code for IE6, IE5
   xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
   }
-xmlhttp.open("GET","public\\xml\\blog.xml",false);
+xmlhttp.open("GET","public\/xml\/blog.xml",false);
 xmlhttp.send();
 xmlDoc=xmlhttp.responseXML; 
 
@@ -23,6 +23,7 @@ for (i=0;i<x.length;i++)
 	mk=mk+"<div id='s_author'>Author:"+x[i].getElementsByTagName("author")[0].childNodes[0].nodeValue+"</div></section>"
 }
 mg.innerHTML=mk;
+<<<<<<< HEAD
 
 
 function meta_social_tag(title,image,url,description){
@@ -33,3 +34,5 @@ function meta_social_tag(title,image,url,description){
 	document.getElementsByTagName('head')[0].innerHTML=document.getElementsByTagName('head')[0].innerHTML+meta; 
 }
 meta_social_tag("Amandeep Gupta","http://codingeass.github.io/dist/img/profile.png","http://codingeass.github.io","Portfolio ,Web Developer | Software Developer | Programmer");
+=======
+>>>>>>> 143950832e0b97f638f0d94d650b8266eed9b19b
